@@ -4,13 +4,12 @@
 #argument 2 : list to return
 #return list
 def flatten(array,returnList):
-   
     for item in array:
         if isinstance(item,int):
             returnList.append(item)
         else:
             flatten(item,returnList)
-   
+  
     return returnList
 
 
